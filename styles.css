@@ -1,6 +1,13 @@
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
+
+/* CSS Reset, removes browser defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* Again, pasted from Google fonts with some modifications 
 Use dot notation for classes in CSS */
 .dm-sans-regular {
@@ -34,4 +41,58 @@ body{
     padding:30px; /* empty space in the element */
     background: #fff;
     border-radius: 10px; /* rounding corners, promise I'm not using AI */
+}
+
+h2{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* body text */
+p{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p a{
+    color: 7494ec;
+    text-decoration: none;
+}
+
+p a:hover{
+    text-decoration: underline;
+}
+
+
+input{
+    width: 100%;
+    padding: 12px;
+    background: #eee;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    background: #836EAA;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    border: none;
+    margin-bottom: 20px;
+    transition: 0.5s; /* transition between styles */
+}
+/* On hover */
+
+button:hover{
+    background:#401F68; 
+
 }
