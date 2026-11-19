@@ -1,0 +1,37 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/* Again, pasted from Google fonts with some modifications 
+Use dot notation for classes in CSS */
+.dm-sans-regular {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input, button{
+    font-family: inherit; /* inherit the font family from the body its in */
+}
+
+/* Center and make it look nice */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /*height of body equal to page*/
+    color: #333;
+    background: linear-gradient(to top, #4e2a84, #e4e0ee);
+}
+
+.container{
+    margin: 0 15px; /* top/bottom has no margin, 15px on left and right */
+}
+
+.form-box {
+    width: 100%;
+    max-width: 450px;
+    padding:30px; /* empty space in the element */
+    background: #fff;
+    border-radius: 10px; /* rounding corners, promise I'm not using AI */
+}
