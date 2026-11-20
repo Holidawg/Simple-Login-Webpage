@@ -41,6 +41,12 @@ body{
     padding:30px; /* empty space in the element */
     background: #fff;
     border-radius: 10px; /* rounding corners, promise I'm not using AI */
+    display: none; /*hides from screen and does not take up layout space*/
+}
+
+.form-box.active  {
+    display: block; /* show only active forms
+    display the element so its the default view */
 }
 
 h2{

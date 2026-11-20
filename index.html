@@ -16,13 +16,16 @@
     <div class="container">
 
         <!--Login Page-->
-        <div class="form-box" id = "login-form"> <!--Creates a form, id is an identifier-->
+
+        <div class="form-box active" id = "login-form"> <!--Creates a form, id is an identifier, initially in active class-->
             <form action=""> <!--form submission currently not being sent anywhere-->
                 <h2>login</h2>
                 <input type="Email" name ="Email" placeholder ="northwestern.edu email" required>
                 <input type="password" name ="password" placeholder ="password" required>
                 <button type="submit" name ="login">Login</button> 
-                <p>don't have an account? <a href="#">register</a></p>
+                <!-- Switch to register form 
+                 Syntax: function parameter is in single quotes -->
+                <p>don't have an account? <a href="#" onclick="showForm('register-form')">register</a></p>
             </form>
         </div>
 
@@ -36,13 +39,14 @@
                 <input type="Email" name ="Email" placeholder ="northwestern.edu email" required>
                 <input type="password" name ="password" placeholder ="password" required>
                 <button type="submit" name ="register">register</button>
-                <p>already have an account? <a href="#">log in</a></p> 
+                <p>already have an account? <a href="#" onclick = "showForm('login-form')">log in</a></p> 
                 
             </form>
         </div>
 
 
     </div>
+    <script src ="script.js"></script> <!--This will make the website interactive!-->
 
 </body>
 
