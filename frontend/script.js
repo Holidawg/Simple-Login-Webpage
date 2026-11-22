@@ -1,3 +1,5 @@
+// for frontend
+
 function showForm(formID){ // Show a specific form based on the form id provided.
     // Select all HTML elements with form-box class. Then iterate through all these elements and remove their active class.
     document.querySelectorAll(".form-box").forEach(form => form.classList.remove("active"));
