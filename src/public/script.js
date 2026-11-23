@@ -9,7 +9,21 @@ function showForm(formID){ // Show a specific form based on the form id provided
 
 }
 
+// Self Teach: Read the signup error code and show its message on the registration form.
+const signupError = new URLSearchParams(window.location.search).get("signup");
+const signupMessages = new Map([
+    ["email", "Enter a valid Northwestern email address."],
+    ["password", "Use a password with at least 8 characters."],
+    ["password-policy", "Choose a stronger password and try again."],
+    ["failed", "We couldn't complete signup. Please try again."]
+]);
 
+if (signupMessages.has(signupError)) {
+    showForm("register-form");
+    const message = document.getElementById("signup-error");
+    message.textContent = signupMessages.get(signupError);
+    message.hidden = false;
+}
 
 
 

@@ -32,11 +32,13 @@
 
         <!--Registration Page-->
         <div class="form-box" id = "register-form">
-            <form action=""> 
+            <!-- Self Learn: Submit to POST /, match the server's field names, and leave room for an error. -->
+            <form action="/" method="post">
                 <h2>create an account</h2>
-                <input type="text" name ="first name" placeholder ="first name" required>
-                <input type="text" name ="last name" placeholder ="last name" required>
-                <input type="Email" name ="Email" placeholder ="northwestern.edu email" required>
+                <p id="signup-error" role="alert" hidden></p>
+                <input type="text" name ="firstName" placeholder ="first name" required>
+                <input type="text" name ="lastName" placeholder ="last name" required>
+                <input type="email" name ="email" placeholder ="northwestern.edu email" required>
                 <input type="password" name ="password" placeholder ="password" required>
                 <button type="submit" name ="register">register</button>
                 <p>already have an account? <a href="#" onclick = "showForm('login-form')">log in</a></p> 
